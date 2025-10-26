@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  background-color: #242424;   
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+  
+}
+
+.header .title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+main {
+  height: 90%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: #000000;
+  position: relative;
+  display: flex;
+  flex-direction: column;   
+}
+
+
+.left .code {
+  flex: 1;                     
+  border-radius: 0.7rem;
+  background-color: #151515;
+  overflow-y: auto;            
+  overflow-x: auto;            
+  padding: 0.5rem;
+}
+
+
+.code pre, 
+.code pre code {
+  white-space: pre-wrap;       
+  word-wrap: break-word;
+  border:none;
+}
+.left .code textarea {
+  background: transparent !important; 
+  color: #fff;                       
+  outline: none !important;           
+  border: none !important;
+  box-shadow: none !important;
+  resize: none;                      
+}
+/* Review button */
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color:#00BFFF;
+  color: white;
+  padding: 0.5rem 2rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+main .left .review:hover {
+  background-color: #009ACD;
+  color: white;
+}
+main .left .review:active {
+  scale: 1.2;
+  background-color: #009ACD;
+  color: white;
+}
+
+
+main .right {
+  background-color: #343434;
+  padding: 1rem 2rem;
+  overflow: auto;
+}
