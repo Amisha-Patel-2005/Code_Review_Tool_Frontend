@@ -21,10 +21,10 @@ function App() {
   }, [])
 
   async function reviewCode() {
-  const API = import.meta.env.VITE_API_BASE_URL; // from .env
-  const response = await axios.post(`${API}/ai/get-review`, { code });
+  const response = await axios.post(`https://code-review-tool-backend.vercel.app/ai/get-review`, { code });
   setReview(response.data);
 }
+
 
 
   return (
