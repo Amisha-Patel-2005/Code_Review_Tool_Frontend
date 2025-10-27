@@ -32,7 +32,11 @@ dist/
 dist-ssr/
 
 # Environment files
+
+node_modules
+dist
 .env
+
 
 # Logs
 logs/
